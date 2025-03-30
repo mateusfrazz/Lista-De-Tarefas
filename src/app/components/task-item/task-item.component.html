@@ -1,6 +1,7 @@
 
 <div class="task"
   (dblclick)="onToggle(tarefa)"
+  [ngClass]="{reminder: tarefa.concluido}" 
 >
     <h3>
         {{tarefa.tarefa}}

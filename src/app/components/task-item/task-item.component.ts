@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class TaskItemComponent {
    @Input () tarefa!:Tarefa;//recebendo os dados do component pai que está com o service em funcionamento 
    @Output() onDeleteTask = new EventEmitter<Tarefa>() //enviando os dados para o componente pai
+   @Output() onToggleConcluido = new EventEmitter<Tarefa>() //enviando o evento do metodo de onToggle
    faTimes = faTimes
    
    //criando um metodo para realizar o delete
@@ -20,7 +21,7 @@ export class TaskItemComponent {
      this.onDeleteTask.emit(tarefa);
    }
 
-   onToggle(){
-    
+   onToggle(tarefa: Tarefa){
+      this.onToggleConcluido.emit(tarefa);
    }
 }
