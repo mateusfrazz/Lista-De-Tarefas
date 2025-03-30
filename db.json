@@ -1,3 +1,10 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "id": "1",
+      "tarefa": "Estudar C#",
+      "categoria": "faculdade",
+      "concluido": true
+    }
+  ]
 }
