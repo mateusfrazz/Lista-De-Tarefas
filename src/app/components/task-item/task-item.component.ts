@@ -19,4 +19,8 @@ export class TaskItemComponent {
    onDelete(tarefa: Tarefa){
      this.onDeleteTask.emit(tarefa);
    }
+
+   onToggle(){
+    
+   }
 }
