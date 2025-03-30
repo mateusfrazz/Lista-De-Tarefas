@@ -32,4 +32,11 @@ export class TasksComponent implements OnInit {
         tarefa.concluido = !tarefa.concluido;
         this.taskService.updateTask(tarefa).subscribe();
       }
+
+
+      AddTask(tarefa: Tarefa){
+        this.taskService.addTask(tarefa).subscribe((tarefa) => {
+          this.tarefas.push(tarefa);
+        })
+      }
 }
