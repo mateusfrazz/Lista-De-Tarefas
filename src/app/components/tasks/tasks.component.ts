@@ -3,9 +3,10 @@ import { TaskService } from '../../services/task.service';
 import { Tarefa } from '../../interfaces/Tarefa';
 import { CommonModule } from '@angular/common';
 import { TaskItemComponent } from "../task-item/task-item.component";
+import { AddTaskComponent } from "../add-task/add-task.component";
 @Component({
   selector: 'app-tasks',
-  imports: [CommonModule, TaskItemComponent],
+  imports: [CommonModule, TaskItemComponent, AddTaskComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
