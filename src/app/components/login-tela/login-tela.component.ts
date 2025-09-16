@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
   FormControl,
@@ -20,5 +20,6 @@ import { merge } from 'rxjs';
   ],
   templateUrl: './login-tela.component.html',
   styleUrl: './login-tela.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoginTelaComponent {}
