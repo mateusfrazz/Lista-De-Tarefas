@@ -9,6 +9,7 @@ import {
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { merge } from 'rxjs';
+import { FormloginComponent } from '../../components/formlogin/formlogin.component';
 
 @Component({
   selector: 'app-login-tela',
@@ -17,9 +18,13 @@ import { merge } from 'rxjs';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    FormloginComponent,
   ],
   templateUrl: './login-tela.component.html',
   styleUrl: './login-tela.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LoginTelaComponent {}
+export class LoginTelaComponent {
+  imagePath =
+    'https://raw.githubusercontent.com/mateusfrazz/landing-page-newslatter/refs/heads/main/images/roxo.png';
+}
