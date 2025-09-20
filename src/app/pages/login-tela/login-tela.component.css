@@ -2,33 +2,36 @@
 
 .main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(34, 34, 34);
-  color: white;
+  background-color: rgb(231, 231, 231);
+  color: rgb(8, 8, 8);
+  padding: 20px; /* para não grudar na borda em telas pequenas */
 }
 
-.main .loginMain {
-  width: 50%;
-  height: 100vh;
+.main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.main .loginMain .btn {
-  background-color: rgb(132, 13, 301);
-  border: none;
   width: 100%;
+  max-width: 900px; /* limite de largura */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 254, 254);
+  gap: 20px; /* espaçamento entre sections */
+  flex-wrap: wrap; /* permite quebrar em telas pequenas */
 }
 
-.main .mainImage {
-  width: 50%;
+.main-content section {
+  flex: 1 1 300px; /* ocupa pelo menos 300px, cresce se tiver espaço */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content img {
+  max-width: 100%;
   height: auto;
-}
-
-span {
-  color: rgb(132, 13, 301);
 }
